@@ -1,0 +1,22 @@
+[{
+	"code":"001", 
+	"label":"Sungard Expension", 
+	"devise":"EUR", 
+	"lastVal":"2012-01-30", 
+	"nextVal":"2013-12-23"
+},
+{
+	"code":"002", 
+	"label":"Sungard Alternative", 
+	"devise":"EUR", 
+	"lastVal":"2013-12-20", 
+	"nextVal":"2013-12-23"
+},
+{
+	"code":"003", 
+	"label":"Sungard Europe", 
+	"devise":"EUR", 
+	"lastVal":"2013-12-23", 
+	"nextVal":"2013-12-30"
+}
+]
