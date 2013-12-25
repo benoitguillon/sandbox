@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.bgi</groupId>
+	<artifactId>groovy1</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
+	<build>
+		<plugins>
+			<plugin>
+	 			<groupId>org.apache.maven.plugins</groupId>
+	 			<artifactId>maven-eclipse-plugin</artifactId>
+	 			<configuration>
+	 				<jeeversion>6.0</jeeversion>
+	 				<wtpversion>2.0</wtpversion>
+	 			</configuration>
+	 		</plugin>
+	 		<plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <configuration>
+	          <source>1.7</source>
+	          <target>1.7</target>
+	        </configuration>
+	      </plugin>
+      </plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+
+		<dependency>
+      			<groupId>org.jboss.resteasy</groupId>
+      			<artifactId>resteasy-jaxrs</artifactId>
+      			<version>2.3.6.Final</version>
+   		</dependency>	
+   		
+   		<dependency>
+    		<groupId>org.jboss.resteasy</groupId>
+    		<artifactId>resteasy-spring</artifactId>
+    		<version>2.3.6.Final</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jettison-provider</artifactId>
+			<version>2.3.6.Final</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxb-provider</artifactId>
+			<version>2.3.6.Final</version>
+		</dependency>	
+		
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>3.1.4.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>3.1.4.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>3.1.4.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>3.1.4.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+			
+		
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>3.2.2.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+	<repositories>
+   		<repository>
+      			<id>jboss-releases</id>
+      			<url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+   		</repository>
+   		<repository>
+      			<id>jboss-thirdparty</id>
+      			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
+   		</repository>
+	</repositories>
+</project>
